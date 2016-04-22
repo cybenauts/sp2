@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<TITLE>Example of onChange Event Handler</TITLE>
+
+<SCRIPT>
+
+function valid(input) {
+    alert("You have changed the value from 10 to " + input);
+}
+
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+<H3>Example of onChange Event Handler</H3>
+Try changing the value from 10 to something else:<BR>
+<FORM>
+     <INPUT TYPE="text" VALUE="10" onChange="valid(this.value)">
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+    var x = document.myForm.fname.value;
+    var y=document.myForm.pass.value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    
+    else if (y == null || y == "") {
+        alert("Password must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname"> <br>
+Password:<input type="text" name='pass'>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

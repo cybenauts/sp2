@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+function sumDigits(num) {
+     var i, sum = 0;                  // can declare two variables at once
+
+     for (i = 1; i <= num; i++) {
+             sum += i;              // add each number to sum (ie, 1 + 2 + ...+ num)
+     }
+
+     // Display result
+     window.alert("The sum of the digits from 1 to "+ num + " is:\n\n " + sum);
+}
+
+</script>
+</head>
+<body>
+ <!-- Looping Functions - Calculate the sum of the digits..-->
+
+<form NAME="SumNums">
+<fieldset>
+    <legend>Sum of Numbers:</legend>
+         The sum of the digits from 1 to:
+         <INPUT TYPE="text" NAME="charNum">
+         <INPUT TYPE="button" VALUE="Calculate" onClick="sumDigits(SumNums.charNum.value)">
+     </fieldset>
+</form>
+</body>
+</html>

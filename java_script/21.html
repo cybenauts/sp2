@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check</title>
+</head>
+<body>
+
+<script>
+	function calc(x)
+	{
+		for(var i=0;i<x;i++)
+		{
+			window.alert(i);
+			document.getElementById('par').innerHTML=i;
+		}
+	}
+</script>
+
+
+<form name='frm'>
+	<fieldset>
+		<legend>Enter a Number:</legend>
+
+	<input type='text' name='ip'></input>
+	<input type='button' value='Check' onclick="calc(frm.ip.value)">
+	<p id='par'></p>
+	</fieldset>
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+<?php$filename = '/php/error-log-example.php';if (!file_exists($filename)){    error_log("Server does not contain the intended file",1,"admin@example.com","From: user@example.com");error_log("file not found!", 3, "/logs/w3r-errors.log");} ?> 
